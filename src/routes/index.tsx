@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Apple, Play, Sparkles, Users, Layers, Trophy, Instagram, Youtube, Twitter, Mail } from "lucide-react";
+import { Download, Sparkles, Users, Layers, Trophy, Instagram, Youtube, Twitter, Mail } from "lucide-react";
 import screen1 from "@/assets/screen_1.png.asset.json";
 import screen2 from "@/assets/screen_2.png.asset.json";
 import screen3 from "@/assets/screen_3.png.asset.json";
