@@ -238,12 +238,9 @@ function Landing() {
             <span className="text-gradient-brand">내일의 큰 섬이 됩니다</span>
           </h2>
           <p className="mt-5 text-white/70">지금 다운로드하고 첫 별을 획득하세요.</p>
-          <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
-            <a href="#" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl bg-brand-gradient font-semibold glow-purple hover:scale-[1.02] transition">
-              <Apple className="w-5 h-5" /> App Store
-            </a>
-            <a href="#" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl bg-white/10 border border-white/15 font-semibold backdrop-blur hover:bg-white/15 transition">
-              <Play className="w-5 h-5" /> Google Play
+          <div className="mt-8 flex justify-center">
+            <a href="https://app.routineisland.com/download" className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-2xl bg-brand-gradient font-semibold glow-purple hover:scale-[1.02] transition">
+              <Download className="w-5 h-5" /> 앱 다운로드
             </a>
           </div>
         </div>
