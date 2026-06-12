@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Download, Sparkles, Users, Layers, Trophy, Instagram, Youtube, Twitter, Mail } from "lucide-react";
+import { Download, Sparkles, Users, Layers, Trophy, Instagram } from "lucide-react";
 import screen1 from "@/assets/screen_1.png.asset.json";
 import screen2 from "@/assets/screen_2.png.asset.json";
 import screen3 from "@/assets/screen_3.png.asset.json";
@@ -261,17 +261,10 @@ function Landing() {
             <a href="#" className="hover:text-white transition">이용약관</a>
           </nav>
           <div className="flex items-center gap-3">
-            {[
-              { Icon: Instagram, label: "Instagram" },
-              { Icon: Youtube, label: "YouTube" },
-              { Icon: Twitter, label: "Twitter" },
-              { Icon: Mail, label: "Email" },
-            ].map(({ Icon, label }) => (
-              <a key={label} href="#" aria-label={label}
-                 className="w-9 h-9 grid place-items-center rounded-full bg-white/5 border border-white/10 hover:bg-[#763FFF] hover:border-[#763FFF] transition">
-                <Icon className="w-4 h-4" />
-              </a>
-            ))}
+            <a href="https://www.instagram.com/routine_island/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"
+               className="w-9 h-9 grid place-items-center rounded-full bg-white/5 border border-white/10 hover:bg-[#763FFF] hover:border-[#763FFF] transition">
+              <Instagram className="w-4 h-4" />
+            </a>
           </div>
         </div>
         <div className="mx-auto max-w-6xl mt-8 text-center text-xs text-white/40">
