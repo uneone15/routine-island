@@ -77,14 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "routine_island" },
+      { name: "description", content: "Routine Island Adventures gamifies habit building, helping users grow their own island by completing daily routines." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "routine_island" },
+      { property: "og:description", content: "Routine Island Adventures gamifies habit building, helping users grow their own island by completing daily routines." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "routine_island" },
+      { name: "twitter:description", content: "Routine Island Adventures gamifies habit building, helping users grow their own island by completing daily routines." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1efe5772-325b-484d-ba1e-02aafb05dbfe/id-preview-eb368f7d--d940bd47-2351-44b3-aab1-67fd64f9625e.lovable.app-1781227321690.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1efe5772-325b-484d-ba1e-02aafb05dbfe/id-preview-eb368f7d--d940bd47-2351-44b3-aab1-67fd64f9625e.lovable.app-1781227321690.png" },
     ],
     links: [
       {
