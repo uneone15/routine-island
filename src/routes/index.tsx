@@ -1,10 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Download, Sparkles, Users, Layers, Trophy, Instagram } from "lucide-react";
-import screen1 from "@/assets/screen_1.png.asset.json";
-import screen2 from "@/assets/screen_2.png.asset.json";
-import screen3 from "@/assets/screen_3.png.asset.json";
-import screen4 from "@/assets/screen_4.png.asset.json";
-import screen5 from "@/assets/screen_5.png.asset.json";
+
+const screen1 = "/2796_1.png";
+const screen2 = "/2796_2.png";
+const screen3 = "/2796_3.png";
+const screen4 = "/2796_4.png";
+const screen5 = "/2796_5.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -43,12 +44,10 @@ function Landing() {
       <header className="sticky top-0 z-50 backdrop-blur-xl bg-[#121223]/70 border-b border-white/5">
         <div className="mx-auto max-w-6xl px-5 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-xl bg-brand-gradient grid place-items-center glow-purple">
-              <Sparkles className="w-4 h-4 text-white" />
-            </div>
+            <img src="/favicon.ico" alt="루틴아일랜드 로고" className="w-8 h-8 rounded-xl" />
             <span className="font-bold tracking-tight">루틴아일랜드</span>
           </div>
-          <a href="#download" className="text-xs md:text-sm px-4 py-2 rounded-full bg-brand-gradient font-semibold hover:opacity-90 transition">
+          <a href="#download" className="text-xs md:text-sm px-4 py-2 rounded-full bg-[#763FFF] font-semibold hover:opacity-90 transition">
             앱 다운로드
           </a>
         </div>
@@ -73,14 +72,14 @@ function Landing() {
           </p>
 
           <div className="mt-8 flex justify-center" id="download">
-            <a href="https://app.routineisland.com/download" className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-2xl bg-brand-gradient font-semibold glow-purple hover:scale-[1.02] transition">
+            <a href="https://app.routineisland.com/download" className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-2xl bg-[#763FFF] font-semibold glow-purple hover:scale-[1.02] transition">
               <Download className="w-5 h-5" /> 앱 다운로드
             </a>
           </div>
 
           <div className="mt-16 relative animate-float">
             <img
-              src={screen1.url}
+              src={screen1}
               alt="루틴아일랜드 앱 메인 화면 - 나만의 섬"
               className="mx-auto w-full max-w-[340px] h-auto rounded-[2rem] shadow-[0_40px_120px_-20px_rgba(118,63,255,0.6)]"
             />
@@ -131,7 +130,7 @@ function Landing() {
             </ul>
           </div>
           <div className="order-1 md:order-2">
-            <PhoneFrame src={screen1.url} alt="섬이 자라나는 메인 화면" />
+            <PhoneFrame src={screen1} alt="섬이 자라나는 메인 화면" />
           </div>
         </div>
       </Section>
@@ -140,7 +139,7 @@ function Landing() {
       <Section className="bg-white/[0.02]">
         <div className="mx-auto max-w-6xl grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <PhoneFrame src={screen2.url} alt="다양한 루틴 테마" />
+            <PhoneFrame src={screen2} alt="다양한 루틴 테마" />
           </div>
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#763FFF]/15 text-[#9d6dff] text-xs font-semibold mb-4">
@@ -184,7 +183,7 @@ function Landing() {
             </p>
           </div>
           <div className="order-1 md:order-2">
-            <PhoneFrame src={screen4.url} alt="참여원들과 함께하는 루틴" />
+            <PhoneFrame src={screen4} alt="참여원들과 함께하는 루틴" />
           </div>
         </div>
       </Section>
@@ -192,7 +191,7 @@ function Landing() {
       {/* FEATURE 4 - Character + Mirror */}
       <Section className="bg-white/[0.02]">
         <div className="mx-auto max-w-6xl grid md:grid-cols-2 gap-12 items-center">
-          <PhoneFrame src={screen3.url} alt="감정 캐릭터 프로필" />
+          <PhoneFrame src={screen3} alt="감정 캐릭터 프로필" />
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#763FFF]/15 text-[#9d6dff] text-xs font-semibold mb-4">
               <Sparkles className="w-3.5 h-3.5" /> CHARACTER · 캐릭터
@@ -222,7 +221,7 @@ function Landing() {
             친구의 한 잔이 나의 한 잔이 됩니다. 작은 인증이 모여 큰 변화를 만들어요.
           </p>
           <div className="mt-12">
-            <PhoneFrame src={screen5.url} alt="긍정적 미러링 효과" />
+            <PhoneFrame src={screen5} alt="긍정적 미러링 효과" />
           </div>
         </div>
       </Section>
@@ -239,7 +238,7 @@ function Landing() {
           </h2>
           <p className="mt-5 text-white/70">지금 다운로드하고 첫 별을 획득하세요.</p>
           <div className="mt-8 flex justify-center">
-            <a href="https://app.routineisland.com/download" className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-2xl bg-brand-gradient font-semibold glow-purple hover:scale-[1.02] transition">
+            <a href="https://app.routineisland.com/download" className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-2xl bg-[#763FFF] font-semibold glow-purple hover:scale-[1.02] transition">
               <Download className="w-5 h-5" /> 앱 다운로드
             </a>
           </div>
@@ -250,9 +249,7 @@ function Landing() {
       <footer className="border-t border-white/5 px-5 py-12 bg-[#0e0e1c]">
         <div className="mx-auto max-w-6xl flex flex-col md:flex-row items-center md:justify-between gap-6">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-xl bg-brand-gradient grid place-items-center">
-              <Sparkles className="w-4 h-4 text-white" />
-            </div>
+            <img src="/favicon.ico" alt="루틴아일랜드 로고" className="w-8 h-8 rounded-xl" />
             <span className="font-bold">루틴아일랜드</span>
           </div>
           <nav className="flex items-center gap-5 text-sm text-white/60">
